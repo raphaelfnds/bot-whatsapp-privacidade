@@ -25,9 +25,9 @@ A coleta e uso de dados seguem a conformidade com a Lei Geral de Proteção de D
 ## 5. Seus Direitos
 Você pode:
 - Cancelar o recebimento de mensagens a qualquer momento enviando "STOP".
-- Solicitar a exclusão de seus dados entrando em contato via [e-mail placeholder, ex: raphael@email.com].
+- Solicitar a exclusão de seus dados entrando em contato via raphael@softvibe.com.br.
 
 ## 6. Contato
-Para dúvidas, entre em contato com o desenvolvedor em [raphael@email.com] ou consulte a documentação no GitHub: [https://github.com/raphaelfnds/bot-whatsapp-privacidade](https://github.com/raphaelfnds/bot-whatsapp-privacidade).
+Para dúvidas, entre em contato com o desenvolvedor em raphael@softvibe.com.br ou consulte a documentação no GitHub: [https://github.com/raphaelfnds/bot-whatsapp-privacidade](https://github.com/raphaelfnds/bot-whatsapp-privacidade).
 
 **Nota:** Este é um projeto educacional. Não utilizamos os dados para fins comerciais.
