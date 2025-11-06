@@ -31,7 +31,7 @@ A coleta e processamento baseiam-se no seu consentimento explícito (opt-in ao d
 
 ## 5. Seus Direitos
 Você pode, a qualquer momento:
-- Cancelar o opt-in e parar de receber mensagens enviando "SAIR" ou "STOP" (exclui estados de conversa; dados no DB são mantidos por 30 dias para compliance, depois anonimizados).
+- Cancelar o opt-in e parar de receber mensagens enviando "SAIR" (exclui estados de conversa; dados no DB são mantidos por 30 dias para compliance, depois anonimizados).
 - Solicitar acesso, correção ou exclusão de seus dados entrando em contato via raphael@softvibe.com.br (resposta em até 15 dias, conforme LGPD).
 - Revogar consentimento sem afetar processamentos anteriores válidos.
 
