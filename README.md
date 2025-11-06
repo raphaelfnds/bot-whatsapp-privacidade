@@ -1,33 +1,44 @@
-# Política de Privacidade - Bot WhatsApp
+# Política de Privacidade - Bot WhatsApp Extensão Cultural
 
-**Última Atualização: 04/10/2025**
+**Última Atualização:** 06/11/2025
 
-Bem-vindo ao Bot WhatsApp Extensão Cultural, desenvolvido por Raphael Fernandes como parte do Projeto de Extensão I da Engenharia de Software - Bacharelado. Esta Política de Privacidade explica como coletamos, usamos e protegemos seus dados pessoais.
+Bem-vindo ao Bot WhatsApp Extensão Cultural, desenvolvido por Raphael Fernandes como parte do Projeto de Extensão I da Engenharia de Software - Bacharelado (Ampli). Este bot promove a difusão cultural na Secretaria de Cultura de Ponta Grossa-PR, alinhado às ODS da ONU (4.7, 9.c, 11.4, 17.16). Esta Política de Privacidade explica como coletamos, usamos, protegemos e excluímos seus dados pessoais, em conformidade com as políticas da WhatsApp Business API da Meta e a Lei Geral de Proteção de Dados (LGPD) brasileira.
 
 ## 1. Informações Coletadas
-Nosso bot coleta as seguintes informações quando você interage com ele via WhatsApp:
-- **Nome:** Fornecido voluntariamente para personalização da experiência.
-- **Número de Telefone:** Obtido automaticamente como parte da comunicação via WhatsApp.
-- **Aceitação de Termos:** Registro de sua concordância com os termos de uso.
+Nosso bot coleta as seguintes informações mínimas quando você interage com ele via WhatsApp, apenas após seu consentimento explícito (opt-in):
+
+- **Nome:** Fornecido voluntariamente para personalização das respostas.
+- **Número de Telefone:** Obtido automaticamente como identificador da conversa no WhatsApp.
+- **Aceitação de Termos:** Registro de sua concordância com esta política e os termos de uso (campo booleano "acceptedTerms").
+
+Não coletamos dados sensíveis, como localização, conteúdo de mensagens além do necessário para o fluxo, ou informações de pagamento. Para a Etapa 2 (respostas dinâmicas via IA), consultas temporárias sobre agendas/editais são processadas em memória e não armazenadas.
 
 ## 2. Uso dos Dados
 Os dados coletados são utilizados exclusivamente para:
-- Fornecer respostas personalizadas sobre editais e agendas culturais.
-- Cumprir os objetivos do Projeto de Extensão (ODS 4.7, 9.c, 11.4, 17.16).
-- Armazenar temporariamente em um banco de dados seguro (MongoDB Atlas) para gestão do fluxo do bot.
+
+- Fornecer respostas personalizadas sobre agendas e editais culturais (links fixos na Etapa 1; scraping e IA na Etapa 2, via Groq com modelo llama-3.1-8b-instant).
+- Gerenciar o fluxo de conversa (estados em memória, com reset por inatividade ou "SAIR").
+- Cumprir os objetivos educacionais do Projeto de Extensão, sem fins comerciais ou publicitários.
+- Armazenar de forma segura no MongoDB Atlas (free tier) para registro de opt-in e personalização futura.
+
+Os dados não são usados para treinamento de IA, profiling ou qualquer finalidade além da difusão cultural.
 
 ## 3. Compartilhamento de Dados
-Não compartilhamos seus dados com terceiros, exceto conforme exigido por lei ou para cumprir os termos da Meta. Os dados são armazenados de forma segura e podem ser excluídos a pedido (enviando "STOP" ao bot).
+Não compartilhamos seus dados com terceiros, incluindo a Meta (exceto metadados necessários para a API WhatsApp), Groq ou outros serviços. Exceções: apenas se exigido por lei ou para cumprir obrigações regulatórias. Os dados são processados em servidores AWS (free tier) e MongoDB Atlas, com acesso restrito ao desenvolvedor.
 
 ## 4. Base Legal
-A coleta e uso de dados seguem a conformidade com a Lei Geral de Proteção de Dados (LGPD) brasileira e os termos da WhatsApp Business API da Meta.
+A coleta e processamento baseiam-se no seu consentimento explícito (opt-in ao digitar "1" para confirmação), conforme Art. 7º, I da LGPD. O bot não inicia conversas proativas sem templates aprovados pela Meta. O projeto é educacional, sem remuneração ou vínculos empregatícios, alinhado à Resolução CNE/CES nº7/2018.
 
 ## 5. Seus Direitos
-Você pode:
-- Cancelar o recebimento de mensagens a qualquer momento enviando "STOP".
-- Solicitar a exclusão de seus dados entrando em contato via raphael@softvibe.com.br.
+Você pode, a qualquer momento:
+- Cancelar o opt-in e parar de receber mensagens enviando "SAIR" ou "STOP" (exclui estados de conversa; dados no DB são mantidos por 30 dias para compliance, depois anonimizados).
+- Solicitar acesso, correção ou exclusão de seus dados entrando em contato via raphael@softvibe.com.br (resposta em até 15 dias, conforme LGPD).
+- Revogar consentimento sem afetar processamentos anteriores válidos.
 
-## 6. Contato
-Para dúvidas, entre em contato com o desenvolvedor em raphael@softvibe.com.br ou consulte a documentação no GitHub: [https://github.com/raphaelfnds/bot-whatsapp-privacidade](https://github.com/raphaelfnds/bot-whatsapp-privacidade).
+## 6. Segurança dos Dados
+Usamos medidas como criptografia em trânsito (HTTPS), IP liberado temporariamente (0.0.0.0/0 para IPs dinâmicos), e retenção mínima (dados excluídos automaticamente após inatividade prolongada). Em caso de violação, notificaremos os afetados conforme LGPD.
 
-**Nota:** Este é um projeto educacional. Não utilizamos os dados para fins comerciais.
+## 7. Contato
+Para dúvidas ou exercícios de direitos, contate o desenvolvedor em raphael@softvibe.com.br. Consulte a documentação completa no GitHub: https://github.com/raphaelfnds/bot-whatsapp-privacidade.
+
+**Nota:** Este é um projeto educacional sem fins lucrativos. Não utilizamos os dados para fins comerciais ou publicitários. Atualizações nesta política serão notificadas via bot ou GitHub.
